@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by manuel on 25.04.15.
+ * LinearLayoutManager with some measurement improvements
  */
 public class BasicLinearLayoutManager extends LinearLayoutManager {
     public BasicLinearLayoutManager(Context context) {

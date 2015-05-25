@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 
 /**
- * Created by manuel on 25.04.15.
+ * RecyclerView with predefined BasicLinearLayoutManager, DividerItemDecoration and DefaultItemAnimator
  */
 public class BasicRecyclerView extends RecyclerView {
     public BasicRecyclerView(Context context) {
