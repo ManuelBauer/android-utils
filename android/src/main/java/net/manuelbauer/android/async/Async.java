@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Async {
 
-    private static String TAG = "Async";
+    private static final String TAG = "Async";
 
     /**
      * List containing all queued operations

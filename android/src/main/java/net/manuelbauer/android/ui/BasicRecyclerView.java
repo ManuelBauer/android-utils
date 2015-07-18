@@ -26,12 +26,12 @@ public class BasicRecyclerView extends RecyclerView {
     }
 
     private void init(Context context) {
-        BasicLinearLayoutManager layoutManager = new BasicLinearLayoutManager(context);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(context); //BasicLinearLayoutManager(context);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         layoutManager.scrollToPosition(0);
 
         this.setLayoutManager(layoutManager);
-        this.addItemDecoration(new DividerItemDecoration(context, DividerItemDecoration.VERTICAL_LIST));
+        //this.addItemDecoration(new DividerItemDecoration(context, DividerItemDecoration.VERTICAL_LIST));
         this.setItemAnimator(new DefaultItemAnimator());
         this.setHasFixedSize(true);
     }
