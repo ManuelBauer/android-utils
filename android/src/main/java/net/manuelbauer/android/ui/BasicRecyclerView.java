@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 
 /**
- * RecyclerView with predefined BasicLinearLayoutManager, DividerItemDecoration and DefaultItemAnimator
+ * RecyclerView with predefined DividerItemDecoration and DefaultItemAnimator
  */
 public class BasicRecyclerView extends RecyclerView {
     public BasicRecyclerView(Context context) {
@@ -26,12 +26,12 @@ public class BasicRecyclerView extends RecyclerView {
     }
 
     private void init(Context context) {
-        LinearLayoutManager layoutManager = new LinearLayoutManager(context); //BasicLinearLayoutManager(context);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(context);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         layoutManager.scrollToPosition(0);
 
         this.setLayoutManager(layoutManager);
-        //this.addItemDecoration(new DividerItemDecoration(context, DividerItemDecoration.VERTICAL_LIST));
+        this.addItemDecoration(new DividerItemDecoration(context, DividerItemDecoration.VERTICAL_LIST));
         this.setItemAnimator(new DefaultItemAnimator());
         this.setHasFixedSize(true);
     }
